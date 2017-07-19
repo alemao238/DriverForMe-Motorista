@@ -1,13 +1,17 @@
 package com.example.vitor.driverforme_motorista.fragmentos;
 
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.vitor.driverforme_motorista.R;
 import com.example.vitor.driverforme_motorista.adaptadores.ServicoAdaptador;
@@ -82,6 +86,37 @@ public class ServicosImediatos extends Fragment {
 
         qrServicosAgendados.addValueEventListener( valueEventListenerServicosImediatos );
 
+
+        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                final int aux = position;
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle("Atendimento");
+                builder.setMessage("Você deseja atender esse pedido?");
+                builder.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(getActivity(), "O cliente lhe espera", Toast.LENGTH_LONG).show();
+                        Log.i("Id do ser", servicos.get(aux).getId());
+                        firebase.child("servicosImediatosAbertos").child(servicos.get(aux).getId()).removeValue();
+                        servicos.get(aux).setMotorista(MotoristaEstatico.getMotorista().getEmail());
+                        firebase.child("servicosEmAtendimento").child(servicos.get(aux).getId()).setValue(servicos.get(aux));
+                        Log.i("Servico", servicos.get(aux).toString());
+                    }
+                });
+                builder.setNegativeButton("Não", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
+                AlertDialog dialog = builder.create();
+                dialog.show();
+
+                return true;
+            }
+        });
 
         return view;
     }
