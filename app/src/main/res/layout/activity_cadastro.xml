@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.vitor.driverforme_motorista.gui.Cadastro">
+
+
+    <EditText
+        android:id="@+id/fdNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:theme="@style/fdPadrao"
+        android:hint="Nome" />
+
+    <EditText
+        android:id="@+id/fdEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:theme="@style/fdPadrao"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/fdSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Senha"
+        android:theme="@style/fdPadrao"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/fdPais"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="País"
+        android:theme="@style/fdPadrao"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/fdEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Estado"
+        android:theme="@style/fdPadrao"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/fdCidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Cidade"
+        android:theme="@style/fdPadrao"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/fdBairro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Bairro"
+        android:theme="@style/fdPadrao"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/fdRua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Rua"
+        android:theme="@style/fdPadrao"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/fdTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Telefone"
+        android:theme="@style/fdPadrao"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/fdCpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Cpf"
+        android:theme="@style/fdPadrao"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/fdCnh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Cnh"
+        android:theme="@style/fdPadrao"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/btCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/botaoPadrao"
+            android:text="Cadastrar" />
+    </LinearLayout>
+</LinearLayout>

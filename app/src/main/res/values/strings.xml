@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DriverForMe-Motorista</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="item_sair">Sair</string>
+    <string name="item_editar_perfil">Editar Perfil</string>
+    <string name="item_excluir_perfil">Excluir Perfil</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

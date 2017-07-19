@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="botaoPadrao" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:textColor">@color/corTexto</item>
+        <item name="android:textSize">@dimen/fonteMedia</item>
+    </style>
+
+
+    <style name="fdPadrao" parent="AppTheme">
+        <item name="android:textColorHint">@color/corTexto</item>
+        <item name="android:textColor">@color/corTexto</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/fonteMedia</item>
+        <item name="android:paddingBottom">@dimen/espaBaixo</item>
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="android:paddingTop">@dimen/espaCima</item>
+    </style>
+</resources>

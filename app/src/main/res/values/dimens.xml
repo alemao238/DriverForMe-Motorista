@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fonteGrande">30sp</dimen>
+    <dimen name="fonteMedia">20sp</dimen>
+    <dimen name="espaCima">10dp</dimen>
+    <dimen name="espaBaixo">10dp</dimen>
+</resources>

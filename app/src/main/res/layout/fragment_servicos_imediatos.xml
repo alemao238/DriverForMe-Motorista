@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.vitor.driverforme_motorista.fragmentos.ServicosImediatos">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="SERVIÇOS IMEDIATOS" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_servicos"
+        android:divider="@color/colorPrimaryDark"
+        android:dividerHeight="3dp"
+        android:layout_gravity="center_horizontal|top" />
+
+</LinearLayout>
