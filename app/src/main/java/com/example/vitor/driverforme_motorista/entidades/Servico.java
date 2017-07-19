@@ -86,7 +86,7 @@ public class Servico {
 
 
     public String toString(){
-        return  "Id: "+getId()+"\nOrigem: "+getOrigem() +"\nDestino: "+getDestino()
+        return "Id:"+getId()+"\nOrigem: "+getOrigem() +"\nDestino: "+getDestino()
                 +"\nCliente: "+getCliente()+"\nMotorista: "+getMotorista()+"\nPreço: "+getPreco()
                 +"\nData: "+getData()+"\nHorário: "+getHorario();
     }
