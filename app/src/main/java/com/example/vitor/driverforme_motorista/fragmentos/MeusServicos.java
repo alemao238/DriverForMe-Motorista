@@ -94,11 +94,11 @@ public class MeusServicos extends Fragment {
                 final int aux = position;
                 AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
                 builder.setTitle("Atendimento");
-                builder.setMessage("Você deseja atender esse pedido?");
+                builder.setMessage("Você deseja finalizar esse pedido?");
                 builder.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Toast.makeText(getActivity(), "O cliente lhe espera", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity(), "Agradecemos pelo serviço", Toast.LENGTH_LONG).show();
                         Log.i("Id do ser", servicos.get(aux).getId());
                         firebase.child("servicosEmAtendimento").child(servicos.get(aux).getId()).removeValue();
                         servicos.get(aux).setMotorista(MotoristaEstatico.getMotorista().getEmail());
